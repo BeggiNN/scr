@@ -18,26 +18,26 @@ class UpgradeData implements  UpgradeDataInterface
 
     public function upgrade(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
     {
-        if (version_compare($context->getVersion(), '1.1.0', '<')) {
+        if (version_compare($context->getVersion(), '1.1.1', '<')) {
             $data = [
                 'name'         => "Magento 2 Events",
                 'post_content' => "This article will talk about Events List in Magento 2. As you know, Magento 2 is using the events driven architecture which will help too much to extend the Magento functionality. We can understand this event as a kind of flag that rises when a specific situation happens. We will use an example module Mageplaza_HelloWorld to exercise this lesson.",
                 'url_key'      => '/magento-2-module-development/magento-2-events.html',
                 'tags'         => 'magento 2,mageplaza helloworld',
                 'status'       => 1,
-                'Category'     => 'Обувь'
+                'Category'     => 'Еда'
             ];
             $post = $this->_postFactory->create();
             $post->addData($data)->save();
         }
-        if (version_compare($context->getVersion(), '1.1.0', '<')) {
+        if (version_compare($context->getVersion(), '1.1.1', '<')) {
             $data = [
                 'name'         => "Magento 2 Events",
                 'post_content' => "This article will talk about Events List in Magento 2. As you know, Magento 2 is using the events driven architecture which will help too much to extend the Magento functionality. We can understand this event as a kind of flag that rises when a specific situation happens. We will use an example module Mageplaza_HelloWorld to exercise this lesson.",
                 'url_key'      => '/magento-2-module-development/magento-2-events.html',
                 'tags'         => 'magento 2,mageplaza helloworld',
                 'status'       => 1,
-                'Category'     => 'Обувь'
+                'Category'     => 'Еда'
             ];
             $post = $this->_postFactory->create();
             $post->addData($data)->save();
